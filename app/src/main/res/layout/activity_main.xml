@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_statement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Welcome to Math Game"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/welcomeImage"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_above="@+id/welcome_statement2"
+            android:layout_below="@+id/welcome_statement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            app:srcCompat="@drawable/math_home2" />
+
+            <TextView
+            android:id="@+id/welcome_statement2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/choices_layout"
+            android:layout_margin="20dp"
+            android:text="Ready to play? Choose a level"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/choices_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/lev0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/lightBlue"
+                android:text="Level 0"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/lev1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/lightBlue"
+                android:text="Level 1"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/lev2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/lightBlue"
+                android:text="Level 2"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivSoundIcon"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/content_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/icon_soundon" />
+
+</RelativeLayout>

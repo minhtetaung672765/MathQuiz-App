@@ -64,4 +64,5 @@ public class QuestionModel {
     public void setCorrectAns(int correctAns) {
         this.correctAns = correctAns;
     }
+
 }

@@ -387,7 +387,7 @@ public class Level0Activity extends AppCompatActivity {
             }
         }
 
-        // reset the condition check
+        // reset the condition check //
         generateForAddition = false;
         generateForDivision = false;
         generateForMultiplication = false;
